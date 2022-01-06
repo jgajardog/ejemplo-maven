@@ -9,7 +9,7 @@ pipeline {
             steps {
                checkout(
                         [$class: 'GitSCM',
-                        branches: [[name: "jenkins-as-code" ]],
+                        branches: [[name: "jenkinsfile-as-code" ]],
                         userRemoteConfigs: [[url: 'https://github.com/jgajardog/ejemplo-maven.git']]])
             }
         }
